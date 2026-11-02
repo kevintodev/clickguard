@@ -31,7 +31,7 @@ cd python-service
 python -m venv venv
 source venv/bin/activate       # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-uvicorn main:app --host 127.0.0.1 --port 8001
+uvicorn main:app --host 127.0.0.1 --port 8000
 ```
 ### 2. Backend
 ```bash
