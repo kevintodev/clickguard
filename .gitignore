@@ -1,0 +1,23 @@
+# Python
+python-service/venv/
+python-service/__pycache__/
+python-service/*.pyc
+python-service/model.pkl
+
+# Java
+backend-java/target/
+
+# Node
+frontend-react/node_modules/
+frontend-react/dist/
+
+# Configuración local
+.env
+**/.env
+!.env.example
+!**/.env.example
+
+# Sistema y registros
+.DS_Store
+Thumbs.db
+*.log
