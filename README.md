@@ -3,7 +3,7 @@ Prototipo educativo de detección de anomalías en clics. Utiliza tráfico
 simulado y un modelo Isolation Forest entrenado con datos sintéticos.
 No es un sistema antifraude validado para producción.
 
-Prototipo creado  en el módulo **IFCT0609 MF0965_3 Desarrollo de software basado en tecnologías orientadas a componentes**
+Prototipo creado siguiendo un manual del módulo **IFCT0609 MF0965_3 Desarrollo de software basado en tecnologías orientadas a componentes**
 ## Arquitectura
 ```text
 Simulador ─┐
