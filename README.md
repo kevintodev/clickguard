@@ -3,7 +3,6 @@ Prototipo educativo de detección de anomalías en clics. Utiliza tráfico
 simulado y un modelo Isolation Forest entrenado con datos sintéticos.
 No es un sistema antifraude validado para producción.
 
-Prototipo creado siguiendo un manual del módulo **IFCT0609 MF0965_3 Desarrollo de software basado en tecnologías orientadas a componentes**
 ## Arquitectura
 ```text
 Simulador ─┐
@@ -24,8 +23,11 @@ Copia `python-service/.env.example` como `python-service/.env` y
 Revisa `backend-java/src/main/resources/application.properties`.
 
 ## Puesta en marcha
-
-### 1. Detector
+### 1. Clonar repositorio
+```bash
+git clone https://github.com/kevintodev/clickguard.git
+```
+### 2. Detector
 ```bash
 cd python-service
 python -m venv venv
@@ -33,13 +35,13 @@ source venv/bin/activate       # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn main:app --host 127.0.0.1 --port 8000
 ```
-### 2. Backend
+### 3. Backend
 ```bash
 cd backend-java 
 ./mvnw spring-boot:run         # Windows: mvnw.cmd spring-boot:run
 ```
 
-### 3. Frontend
+### 4. Frontend
 ```bash
 cd frontend-react
 npm install
@@ -47,7 +49,7 @@ npm install axios
 npm run dev
 ```
 Abre http://localhost:5173.
-### 4. Simulador
+### 5. Simulador
 ```bash
 cd python-service
 source venv/bin/activate       # Windows: venv\Scripts\activate
